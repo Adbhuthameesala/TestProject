@@ -1,0 +1,9 @@
+node{
+  stage('SCM clone'){
+    git 'git 'https://github.com/Adbhuthameesala/TestProject'
+  }
+  stage ('maven- build'){
+  mvn clean package
+   
+  }
+}
